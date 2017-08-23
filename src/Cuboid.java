@@ -23,10 +23,46 @@ public class Cuboid extends ThreeDimensionalShape {
 	// Constructor taking the three dimensions needed
 	public Cuboid(double l, double w, double h) {
 
+		//use the mutator methods to ensure dimensions conform to expectations
+		setLength(l);
+		setWidth(w);
+		setHeight(h);
+	}
+	
+	//public accessor to return the length
+	public double getLength() {
+		return length;
+	}
+	
+	//public mutator to set the length
+	public void setLength(double newLength) {
+		
 		// negative values don't make any sense, use absolute value
-		length = Math.abs(l);
-		width = Math.abs(w);
-		height = Math.abs(h);
+		length = Math.abs(newLength);
+	}
+	
+	//public accessor for width
+	public double getWidth() {
+		return width;
+	}
+	
+	//public mutator to set the width
+	public void setWidth(double newWidth) {
+		
+		// negative values don't make any sense, use absolute value
+		width = Math.abs(newWidth);
+	}
+	
+	//public accessor for the height
+	public double getHeight() {
+		return height;
+	}
+	
+	//public mutator to set the height
+	public void setHeight(double newHeight) {
+		
+		// negative values don't make any sense, use absolute value
+		height = Math.abs(newHeight);
 	}
 
 	// implementation of the abstract surfaceArea method from the parent class

@@ -22,8 +22,20 @@ public class Sphere extends ThreeDimensionalShape {
 
 	// constructor taking the one piece of data we need for a sphere, the radius
 	public Sphere(double r) {
+		
+		//use the mutator to ensure radius conforms to expectations
+		setRadius(r);
+	}
+	
+	//public accessor for radius
+	public double getRadius() {
+		return radius;
+	}
+	
+	public void setRadius(double newRadius) {
+		
 		// negative values don't make any sense, use absolute value
-		radius = Math.abs(r);
+		radius = Math.abs(newRadius);
 	}
 
 	// implementation of the abstract surfaceArea method from the parent
