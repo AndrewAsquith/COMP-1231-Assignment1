@@ -84,7 +84,7 @@ public class Cuboid extends ThreeDimensionalShape {
 	public String toString() {
 		
 		//number formatter for two decimal places
-		DecimalFormat formatter = new DecimalFormat("#0.00");
+		DecimalFormat formatter = new DecimalFormat("#0.0000");
 
 		return "Length: " + formatter.format(length) + " width: " 
 				+ formatter.format(width) + " height: "

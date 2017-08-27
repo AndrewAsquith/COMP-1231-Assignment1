@@ -26,7 +26,7 @@ public abstract class ThreeDimensionalShape {
 	public String toString() {
 		
 		//number formatter for two decimal places
-		DecimalFormat formatter = new DecimalFormat("#0.00"); 
+		DecimalFormat formatter = new DecimalFormat("#0.0000"); 
 		
 		return "Volume is " + formatter.format(volume()) 
 				+ " and surface area is " + formatter.format(surfaceArea());

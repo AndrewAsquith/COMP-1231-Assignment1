@@ -49,7 +49,7 @@ public class Sphere extends ThreeDimensionalShape {
 	public double volume() {
 
 		// volume of a sphere is (4/3) * pi * r3
-		return (4 / 3) * Math.PI * Math.pow(radius, 3);
+		return ((double)4 / 3) * Math.PI * Math.pow(radius, 3);
 	}
 
 	// return the radius and the parent's toString representation
@@ -57,7 +57,7 @@ public class Sphere extends ThreeDimensionalShape {
 	public String toString() {
 		
 		//number formatter for two decimal places
-		DecimalFormat formatter = new DecimalFormat("#0.00");
+		DecimalFormat formatter = new DecimalFormat("#0.0000");
 
 		return "Radius is " + formatter.format(radius) + ", " + super.toString();
 	}
