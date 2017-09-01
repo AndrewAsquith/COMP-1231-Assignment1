@@ -53,10 +53,10 @@ public class Sphere extends ThreeDimensionalShape {
 	}
 
 	// return the radius and the parent's toString representation
-	// as with the base class we format to two decimal places
+	// as with the base class we format to four decimal places
 	public String toString() {
 		
-		//number formatter for two decimal places
+		//number formatter for four decimal places
 		DecimalFormat formatter = new DecimalFormat("#0.0000");
 
 		return "Radius is " + formatter.format(radius) + ", " + super.toString();
